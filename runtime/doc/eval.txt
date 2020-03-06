@@ -2487,6 +2487,8 @@ getftype({fname})		String	description of type of file {fname}
 getimstatus()			Number	|TRUE| if the IME status is active
 getjumplist([{winnr} [, {tabnr}]])
 				List	list of jump list items
+trimjumplist({num}, [{winnr} [, {tabnr}]])
+				none	trim jump list by {num} items.
 getline({lnum})			String	line {lnum} of current buffer
 getline({lnum}, {end})		List	lines {lnum} to {end} of current buffer
 getloclist({nr} [, {what}])	List	list of location list items
@@ -5292,6 +5294,18 @@ getjumplist([{winnr} [, {tabnr}]])			*getjumplist()*
 
 		Can also be used as a |method|: >
 			GetWinnr()->getjumplist()
+
+trimjumplist({num}, [{winnr} [, {tabnr}]])			*trimjumplist()*
+		Trim the |jumplist| by {num} for the specified window.
+
+		Without arguments use the current window.
+		With {winnr} only use this window in the current tab page.
+		{winnr} can also be a |window-ID|.
+		With {winnr} and {tabnr} use the window in the specified tab
+		page.
+
+		Can also be used as a |method|: >
+			GetWinnr()->trimjumplist({num})
 
 <							*getline()*
 getline({lnum} [, {end}])

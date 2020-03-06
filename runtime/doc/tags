@@ -9571,6 +9571,7 @@ toolbar-icon	gui.txt	/*toolbar-icon*
 toupper()	eval.txt	/*toupper()*
 tr()	eval.txt	/*tr()*
 trim()	eval.txt	/*trim()*
+trimjumplist()	eval.txt	/*trimjumplist()*
 trojan-horse	starting.txt	/*trojan-horse*
 true-variable	eval.txt	/*true-variable*
 trunc()	eval.txt	/*trunc()*
